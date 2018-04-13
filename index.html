@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Kehrls: web dev challenge </title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <noscript>Please enable Javascript in your browser!</noscript>
+    <style>
+    h1 {
+      font-size:14px;
+      font-weight:normal;
+      margin:0 0 -1.45em;
+    }
+    h4{
+      font-size:24px;
+    }
+
+    li {
+        display: inline-block;
+        text-align: left;
+    }
+    a{
+      color:#000;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #83afda !important;
+      text-decoration: none;
+    }
+    /* span {
+        display: inline-block;
+        width: 300px;
+        margin-top:20px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        margin-right:0;
+        overflow: hidden;
+    } */
+
+    .footer{
+      background:#000;
+      color:#979797;
+      padding: 12px;
+    }
+    </style>
+  </head>
+  <body>
+
+    
+
+
+
+      <nav class="navbar navbar-default noBMargin whiteBkg">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CAMPAIGNS</a></li>
+                <li><a href="#">FILES</a></li>
+                <li><a href="#">DEPARTMENTS</a></li>
+                <li><a href="#">PEOPLE</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right inputGap">
+                  <form action="search()">
+                      
+                        <i class="glyphicon glyphicon-search"></i>
+                        <input id="search" class="noOutline" placeholder="Search everywhere" type="text" >
+                      
+                  </form> 
+                <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </nav> 
+      
+      <div class="container-fluid noPadding">
+        
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="fullWidth carouselHeight " src="http://via.placeholder.com/350x150" >  <!--http://lorempixel.com/city-->
+                    <div class="centered">
+                      Welcome to the Community
+                    </div>
+                  </div>
+            
+                  <div class="item">
+                    <img class="fullWidth carouselHeight" src="http://via.placeholder.com/350x150" >  <!--http://lorempixel.com/1250/308/technics-->
+                  </div>
+                
+                  <div class="item">
+                    <img class="fullWidth carouselHeight" src="http://via.placeholder.com/350x150"  >  <!--http://lorempixel.com/1250/308/business-->
+                  </div>
+                </div>
+            
+        </div>
+      </div>
+
+      <div id="content" class="container text-center">
+        <p id="title">Stories from Us</p>
+         
+        <div class="row">
+          <div class="col-sm-4">            
+            <p>May 20, 2015</p>
+            <h4> Corporate Announcement</h4>
+            <img class="img-responsive displayInline" src="http://via.placeholder.com/356x185" />  <!--http://lorempixel.com/357/185/people-->
+            <p> We want to ensure you are comfortable with our new and awesome platform. Since we haven launched our new community we have been receiving excellent feedback, but we would like to personally hear from you.</p>
+            <a href="#">Read More</a>             
+          </div>
+          <div class="col-sm-4">             
+            <p>July 18th, 2015</p>
+            <h4> New Office Location</h4>
+            <img class="picGap img-responsive displayInline" src="http://via.placeholder.com/356x175" />  <!--http://lorempixel.com/357/175/city-->
+            <p> We have officially moved to our new office location! It has been a long time coming but we have survied and now we are settling in.</p>
+            <a href="#">Read More</a>            
+          </div>
+          <div class="col-sm-4">
+            <p>August 26, 2015</p>
+            <h4>Connect with coworkers</h4>
+            <img class="img-responsive displayInline" src="http://via.placeholder.com/356x185" />  <!--http://lorempixel.com/357/185/nature -->
+            <p> We are looking into using this new platform to further assist you in connecting with your coworks. We are hoping this tool will rock!</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+            <p>&copy; 2016 </p>
+          
+            <img src="./img/igloo-chicklet-gr.png" alt="Igloo Software" class="pull-right">
+        </div>
+       </div>
+     
+    </footer>
+  </body>
+<html>
