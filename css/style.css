@@ -6,24 +6,20 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     height: 100%;
+    display: none;
 }
 
-/* nav {
-    height: 63px;
-    padding: 0px !important;
+img:not {
+    visibility: hidden;
 }
 
-nav ul {
-    height: inherit;
-    padding: 5px 0px 0px 0px;
-
-}
-
-nav ul li {
-    
+.navbar-nav>li>a {
+    color: black !important;
     font-weight: 600;
-    font-size: 14px;
-} */
+    padding-left: 26px;
+    padding-right: 26px;
+    
+}
 
 form .input-group{
     margin-top: 15px;
@@ -37,7 +33,7 @@ form .input-group{
 } 
 
 form[action="search()"] i {
-    padding-left: 9px;
+    padding-left: 13px;
     padding-top: 5px;
     padding-bottom: 5px;
    
@@ -45,9 +41,17 @@ form[action="search()"] i {
 
 #search {
       border: 0px;
-      padding-left: 8px;
+      padding: 5px 27px 5px 5px;
       vertical-align: 2px;
       background-color: transparent;
+}
+
+.carousel-inner div div[class="centered"] p:first-child {
+    font-size: 56px;
+}
+
+.carousel-inner div div[class="centered"] p {
+    font-size: 36px;
 }
 
 
@@ -80,6 +84,16 @@ form[action="search()"] i {
     padding: 12px 0px 15px 0px;
 }
 
+.loadingSpinner{
+    background: url("../img/spinner-gif.gif") no-repeat;
+    background-size: cover;
+}
+
+#content div div img{
+    width: 356px;
+    height: 185px;
+}
+
 #content + p{
     font-size: 20px;
     font-weight: 300;   
@@ -91,8 +105,6 @@ form[action="search()"] i {
     font-weight: 600;   
 
 }
-
-
 
 #content img + p{
 
@@ -113,10 +125,14 @@ form[action="search()"] i {
     padding-bottom: 57px;
 }
 
+footer div[class="row"] {
+    padding: 0px 11%;
+}
+
   footer p {
       display: inline;
       line-height: 30px;
-      font-size: 10px;
+      font-size: 12px;
   }
 
   .noOutline {
@@ -148,7 +164,7 @@ form[action="search()"] i {
  }
 
  .inputGap {
-    padding-top: 11px;
+    padding-top: 9px;
  }
 
  .whiteBkg {
@@ -160,16 +176,64 @@ form[action="search()"] i {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 45px;
+    color: white;
+ }
+
+ .addTen {
+     margin: 0px 9%;
  }
 
   @media screen and (min-width: 1200px) {
     footer {
-      
       bottom: 0;
-    
     }
 }
 
+@media screen and (max-width: 768px) {
+    .carousel-inner div div[class="centered"] p:first-child {
+        font-size: 30px;
+    }
+    
+    .carousel-inner div div[class="centered"] p {
+        font-size: 18px;
+    }
 
+    .carousel-indicators {
+        visibility: hidden;
+    }
+}
 
-/* Your styles here ...
+@media screen and (min-width: 768px) {
+    .carousel-inner div div[class="centered"] p:first-child {
+        font-size: 42px;
+    }
+    
+    .carousel-inner div div[class="centered"] p {
+        font-size: 26px;
+    }
+
+    .carousel-indicators li.active {
+        width: 16px;
+        height: 16px;
+    }
+
+    .carousel-indicators li {
+        width: 16px;
+        height: 16px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1335px) {
+    .carousel-inner div div[class="centered"] p:first-child {
+        font-size: 56px;
+    }
+    
+    .carousel-inner div div[class="centered"] p {
+        font-size: 36px;
+    }
+}
+
